@@ -1,4 +1,4 @@
-﻿using Jose01.DAO;
+﻿using stanley01.DAO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,11 +9,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Jose01.VISTA
+namespace stanley01.vista
 {
-    public partial class FrmListaUsuarioVisual : Form
+    public partial class FrmListaVisualDeusuario : Form
     {
-        public FrmListaUsuarioVisual()
+        public FrmListaVisualDeusuario()
         {
             InitializeComponent();
         }
@@ -23,9 +23,10 @@ namespace Jose01.VISTA
 
         }
 
-        private void FrmListaUsuarioVisual_Load(object sender, EventArgs e)
+        private void FrmListaVisualDeusuario_Load(object sender, EventArgs e)
         {
             ClsListaUsuario cls = new ClsListaUsuario();
+
             foreach (var iteracion in cls.user)
             {
                 dataGridView1.Rows.Add(iteracion.ToString());

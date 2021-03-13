@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Jose01.VISTA
+namespace stanley01.vista
 {
     public partial class FrmAcercaDe : Form
     {
         public FrmAcercaDe()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

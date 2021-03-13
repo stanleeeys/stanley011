@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Jose01.VISTA
+namespace stanley01.vista
 {
     public partial class FrmMenu : Form
     {
@@ -16,42 +16,37 @@ namespace Jose01.VISTA
         {
             InitializeComponent();
         }
-        public String usuarioEstado;
+
         private void FrmMenu_Load(object sender, EventArgs e)
         {
-            label1.Text = usuarioEstado;
+        
         }
 
-        private void cLICKAQUIPARAMASINFORMAICONToolStripMenuItem_Click(object sender, EventArgs e)
+        private void cLICKMASINFORMACIÓNToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmAcercaDe frm =  new FrmAcercaDe();
+
+        }
+
+        private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuStrip2_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void cLICKPARAMASINFROMACIONToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmListaVisualDeusuario frm = new FrmListaVisualDeusuario();
             frm.MdiParent = this;
             frm.Show();
-        }
-
-        private void arreglosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FrmListaUsuarioVisual frm =  new FrmListaUsuarioVisual();
-            frm.MdiParent = this;
-            frm.Show();
-        }
-
-        private void sumasToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FrmOperaciones frmop = new FrmOperaciones();
-            frmop.MdiParent = this;
-            frmop.BtnResta.Enabled = false;
-
-            frmop.Show();
-        }
-
-        private void restaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FrmOperaciones frmop = new FrmOperaciones();
-            frmop.MdiParent = this;
-            frmop.BtnSuma.Enabled = false;
-
-            frmop.Show();
         }
     }
 }
