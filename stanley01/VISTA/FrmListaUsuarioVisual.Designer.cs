@@ -1,7 +1,7 @@
 ﻿
-namespace stanley01.vista
+namespace Jose01.VISTA
 {
-    partial class FrmListaVisualDeusuario
+    partial class FrmListaUsuarioVisual
     {
         /// <summary>
         /// Required designer variable.
@@ -40,26 +40,26 @@ namespace stanley01.vista
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1});
-            this.dataGridView1.Location = new System.Drawing.Point(32, 31);
+            this.dataGridView1.Location = new System.Drawing.Point(198, 95);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(385, 279);
+            this.dataGridView1.Size = new System.Drawing.Size(444, 294);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Column1
             // 
-            this.Column1.HeaderText = "Lista de usuario";
+            this.Column1.HeaderText = "Lista de usuarios";
             this.Column1.Name = "Column1";
             // 
-            // FrmListaVisualDeusuario
+            // FrmListaUsuarioVisual
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(511, 362);
+            this.ClientSize = new System.Drawing.Size(902, 535);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "FrmListaVisualDeusuario";
-            this.Text = "FrmListaVisualDeusuario";
-            this.Load += new System.EventHandler(this.FrmListaVisualDeusuario_Load);
+            this.Name = "FrmListaUsuarioVisual";
+            this.Text = "FrmListaVisualdeusuario";
+            this.Load += new System.EventHandler(this.FrmListaUsuarioVisual_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace stanley01.dominio
+namespace Jose01.DOMINIO
 {
     class Login
     {
         private String usuario;
+
         private String password;
 
         public string Usuario { get => usuario; set => usuario = value; }

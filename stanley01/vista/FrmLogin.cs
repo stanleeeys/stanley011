@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,60 +8,61 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using stanley01.negocio;
-using stanley01.dominio;
+using Jose01.DOMINIO;
+using Jose01.NEGOCIO;
+using Jose01.VISTA;
 
-
-namespace stanley01
+namespace Jose01
 {
-	public partial class Form1 : Form
-	{
-		public Form1()
-		{
-			InitializeComponent();
-		}
-
-        private void label2_Click(object sender, EventArgs e)
+    public partial class Form1 : Form
+    {
+        public Form1()
         {
-          
-
+            InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnentrar_Click(object sender, EventArgs e)
+        private void btnEntrar_Click(object sender, EventArgs e)
         {
             Login log = new Login();
 
-            log.Usuario = txtUser.Text; 
-            log.Password = txtPass.Text;
+            log.Usuario = txtUser.Text;
+            log.Usuario = txtPass.Text;
 
-            ClsLogin clsl = new ClsLogin();
+            ClsLogin clsL = new ClsLogin();
 
-            int variabledeevualuacion= clsl.acceso(log);
+            int variabledeevaluacion = clsL.acceso(log);
 
-            if (variabledeevualuacion==1){
+            if (variabledeevaluacion==1) {
 
-                MessageBox.Show("Welcom");
+                MessageBox.Show("Welcome");
+                FrmMenu frm = new FrmMenu();
+
+                frm.usuarioEstado = txtUser.Text;
+                frm.Show();
+                this.Hide();
+            
             }
             else
             {
                 MessageBox.Show("False");
             }
+            
+
         }
 
-        private void btncancelar_Click(object sender, EventArgs e)
+        private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtPass_TextChanged(object sender, EventArgs e)
+        {
 
         }
 
-        private void btn1_Click(object sender, EventArgs e)
+        private void txtUser_TextChanged(object sender, EventArgs e)
         {
-           
+
         }
     }
 }

@@ -1,145 +1,129 @@
 ﻿
-namespace stanley01
+namespace Jose01
 {
-	partial class Form1
-	{
-		/// <summary>
-		/// Variable del diseñador necesaria.
-		/// </summary>
-		private System.ComponentModel.IContainer components = null;
+    partial class Form1
+    {
+        /// <summary>
+        /// Variable del diseñador necesaria.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
 
-		/// <summary>
-		/// Limpiar los recursos que se estén usando.
-		/// </summary>
-		/// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
-		protected override void Dispose(bool disposing)
-		{
-			if (disposing && (components != null))
-			{
-				components.Dispose();
-			}
-			base.Dispose(disposing);
-		}
+        /// <summary>
+        /// Limpiar los recursos que se estén usando.
+        /// </summary>
+        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
 
-		#region Código generado por el Diseñador de Windows Forms
+        #region Código generado por el Diseñador de Windows Forms
 
-		/// <summary>
-		/// Método necesario para admitir el Diseñador. No se puede modificar
-		/// el contenido de este método con el editor de código.
-		/// </summary>
-		private void InitializeComponent()
-		{
+        /// <summary>
+        /// Método necesario para admitir el Diseñador. No se puede modificar
+        /// el contenido de este método con el editor de código.
+        /// </summary>
+        private void InitializeComponent()
+        {
             this.txtUser = new System.Windows.Forms.TextBox();
             this.txtPass = new System.Windows.Forms.TextBox();
-            this.btn1 = new System.Windows.Forms.Label();
-            this.User = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnentrar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnEntrar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtUser
             // 
-            this.txtUser.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUser.Location = new System.Drawing.Point(47, 131);
-            this.txtUser.Margin = new System.Windows.Forms.Padding(4);
+            this.txtUser.Location = new System.Drawing.Point(12, 127);
             this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(232, 24);
+            this.txtUser.Size = new System.Drawing.Size(126, 20);
             this.txtUser.TabIndex = 0;
+            this.txtUser.TextChanged += new System.EventHandler(this.txtUser_TextChanged);
             // 
             // txtPass
             // 
-            this.txtPass.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPass.Location = new System.Drawing.Point(46, 271);
-            this.txtPass.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPass.Location = new System.Drawing.Point(15, 221);
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
-            this.txtPass.Size = new System.Drawing.Size(232, 24);
+            this.txtPass.Size = new System.Drawing.Size(126, 20);
             this.txtPass.TabIndex = 1;
+            this.txtPass.TextChanged += new System.EventHandler(this.txtPass_TextChanged);
             // 
-            // btn1
+            // label1
             // 
-            this.btn1.AutoSize = true;
-            this.btn1.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn1.Location = new System.Drawing.Point(42, 240);
-            this.btn1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(80, 16);
-            this.btn1.TabIndex = 2;
-            this.btn1.Text = "PASSWORD";
-            this.btn1.Click += new System.EventHandler(this.btn1_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 85);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(69, 33);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "USER";
             // 
-            // User
+            // label2
             // 
-            this.User.AutoSize = true;
-            this.User.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.User.Location = new System.Drawing.Point(42, 100);
-            this.User.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.User.Name = "User";
-            this.User.Size = new System.Drawing.Size(39, 16);
-            this.User.TabIndex = 3;
-            this.User.Text = "USER";
-            this.User.Click += new System.EventHandler(this.label2_Click);
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(12, 184);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(130, 33);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "PASSWORD";
             // 
-            // button1
+            // btnEntrar
             // 
-            this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button1.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(180, 369);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(129, 57);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "CANCELAR";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.btncancelar_Click);
+            this.btnEntrar.Location = new System.Drawing.Point(15, 286);
+            this.btnEntrar.Name = "btnEntrar";
+            this.btnEntrar.Size = new System.Drawing.Size(75, 37);
+            this.btnEntrar.TabIndex = 4;
+            this.btnEntrar.Text = "ENTRAR";
+            this.btnEntrar.UseVisualStyleBackColor = true;
+            this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
-            // btnentrar
+            // btnCancelar
             // 
-            this.btnentrar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnentrar.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnentrar.Location = new System.Drawing.Point(16, 369);
-            this.btnentrar.Margin = new System.Windows.Forms.Padding(4);
-            this.btnentrar.Name = "btnentrar";
-            this.btnentrar.Size = new System.Drawing.Size(126, 57);
-            this.btnentrar.TabIndex = 5;
-            this.btnentrar.Text = "ENTRAR";
-            this.btnentrar.UseVisualStyleBackColor = true;
-            this.btnentrar.Click += new System.EventHandler(this.btnentrar_Click);
+            this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnCancelar.Location = new System.Drawing.Point(132, 286);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(75, 37);
+            this.btnCancelar.TabIndex = 5;
+            this.btnCancelar.Text = "CANCELAR";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // Form1
             // 
-            this.AcceptButton = this.btnentrar;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AcceptButton = this.btnEntrar;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.CancelButton = this.button1;
-            this.ClientSize = new System.Drawing.Size(326, 492);
-            this.Controls.Add(this.btnentrar);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.User);
-            this.Controls.Add(this.btn1);
+            this.CancelButton = this.btnCancelar;
+            this.ClientSize = new System.Drawing.Size(271, 450);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnEntrar);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPass);
             this.Controls.Add(this.txtUser);
-            this.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForeColor = System.Drawing.Color.DarkBlue;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Login";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
 
-		}
+        }
 
         #endregion
 
         private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.TextBox txtPass;
-        private System.Windows.Forms.Label btn1;
-        private System.Windows.Forms.Label User;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnentrar;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnEntrar;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }
 
