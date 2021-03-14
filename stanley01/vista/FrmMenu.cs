@@ -48,5 +48,12 @@ namespace stanley01.vista
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void cRUDToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmUsuarios frm = new FrmUsuarios();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }

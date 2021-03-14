@@ -34,6 +34,9 @@ namespace stanley01.vista
             this.cLICKPARAMASINFROMACIONToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.arreglosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
+            this.mATETICASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.conexionesBDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cRUDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -41,7 +44,9 @@ namespace stanley01.vista
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.acerdaDeToolStripMenuItem,
-            this.arreglosToolStripMenuItem});
+            this.arreglosToolStripMenuItem,
+            this.mATETICASToolStripMenuItem,
+            this.conexionesBDToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 24);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(350, 24);
@@ -79,6 +84,27 @@ namespace stanley01.vista
             this.menuStrip2.Text = "menuStrip2";
             this.menuStrip2.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip2_ItemClicked);
             // 
+            // mATETICASToolStripMenuItem
+            // 
+            this.mATETICASToolStripMenuItem.Name = "mATETICASToolStripMenuItem";
+            this.mATETICASToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
+            this.mATETICASToolStripMenuItem.Text = "MATETICAS";
+            // 
+            // conexionesBDToolStripMenuItem
+            // 
+            this.conexionesBDToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cRUDToolStripMenuItem});
+            this.conexionesBDToolStripMenuItem.Name = "conexionesBDToolStripMenuItem";
+            this.conexionesBDToolStripMenuItem.Size = new System.Drawing.Size(99, 20);
+            this.conexionesBDToolStripMenuItem.Text = "Conexiones BD";
+            // 
+            // cRUDToolStripMenuItem
+            // 
+            this.cRUDToolStripMenuItem.Name = "cRUDToolStripMenuItem";
+            this.cRUDToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cRUDToolStripMenuItem.Text = "CRUD";
+            this.cRUDToolStripMenuItem.Click += new System.EventHandler(this.cRUDToolStripMenuItem_Click);
+            // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -104,5 +130,8 @@ namespace stanley01.vista
         private System.Windows.Forms.ToolStripMenuItem cLICKPARAMASINFROMACIONToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem arreglosToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip2;
+        private System.Windows.Forms.ToolStripMenuItem mATETICASToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem conexionesBDToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cRUDToolStripMenuItem;
     }
 }
