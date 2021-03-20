@@ -41,7 +41,6 @@ namespace stanley01.vista
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
             this.Tabla = new System.Windows.Forms.DataGridView();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -92,7 +91,7 @@ namespace stanley01.vista
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(135, 509);
+            this.button2.Location = new System.Drawing.Point(247, 440);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(204, 45);
             this.button2.TabIndex = 5;
@@ -102,6 +101,7 @@ namespace stanley01.vista
             // 
             // textId
             // 
+            this.textId.Enabled = false;
             this.textId.Location = new System.Drawing.Point(88, 9);
             this.textId.Name = "textId";
             this.textId.Size = new System.Drawing.Size(363, 20);
@@ -153,16 +153,6 @@ namespace stanley01.vista
             this.label5.TabIndex = 11;
             this.label5.Text = "Pass";
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(247, 440);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(204, 45);
-            this.button3.TabIndex = 12;
-            this.button3.Text = "Actualizar";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
             // Tabla
             // 
             this.Tabla.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -211,7 +201,6 @@ namespace stanley01.vista
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(529, 599);
             this.Controls.Add(this.Tabla);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -247,7 +236,6 @@ namespace stanley01.vista
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.DataGridView Tabla;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
